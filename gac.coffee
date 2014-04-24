@@ -6,7 +6,7 @@ RAILS =
           
   clean: (callback) ->
     console.log 'Operating cleaning...'
-    if RAILS.window.INITialized or false
+    if RAILS.initialized or false
       Gibberish.clear()
     callback()
 
@@ -16,6 +16,7 @@ RAILS =
       Gibberish.window.INIT()
       Gibberish.Time.export()
       Gibberish.Binops.export()
+      RAILS.initialized = true
       if callback then callback()
     catch e
       alert e  
@@ -27,7 +28,7 @@ RAILS =
       js = unescape js
       if callback then callback !js, js
     catch e
-      RAILS.window.INITialized = false
+      RAILS.initialized = false
       alert "#{compile.prototype.name}:\n#{js.map}#{e}"
       
   run: (callback)->
