@@ -1,0 +1,24 @@
+{
+  "name": "gac",
+  "version": "0.0.1",
+  "description": "An port of gibberish.js to coffee, to be used as simply possible as audio-client",
+  "main": "gac.js",
+  "dependencies":{
+    "coffee":"*"
+  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahpd/gac.js"
+  },
+  "keywords": [
+    "gibberish",
+    "audio",
+    "client"
+  ],
+  "author": "jahpd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahpd/gac.js/issues"
+  },
+  "homepage": "https://github.com/jahpd/gac.js"
+}
